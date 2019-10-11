@@ -1,0 +1,187 @@
+EESchema Schematic File Version 4
+LIBS:servo_pcb_8A-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title "EEE4022S - Servo PCB"
+Date "2019-08-17"
+Rev "0.0"
+Comp "University of Cape Town"
+Comment1 "Project By: Simplicity S Dywili (dywsim001@myuct.ac.za)"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Interface_UART:MAX485E U5
+U 1 1 5D5D202B
+P 6100 3700
+F 0 "U5" H 6100 4381 50  0000 C CNN
+F 1 "MAX485E" H 6100 4290 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6100 3000 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX1487E-MAX491E.pdf" H 6100 3750 50  0001 C CNN
+	1    6100 3700
+	1    0    0    -1  
+$EndComp
+Text HLabel 4700 3900 0    100  Input ~ 0
+TX
+Text HLabel 4700 3600 0    100  Output ~ 0
+RX
+Text HLabel 8250 3600 2    100  Input ~ 0
+B
+Text HLabel 8250 3900 2    100  Output ~ 0
+A
+$Comp
+L power:GND #PWR015
+U 1 1 5D5D3E8F
+P 6100 4400
+F 0 "#PWR015" H 6100 4150 50  0001 C CNN
+F 1 "GND" H 6105 4227 50  0000 C CNN
+F 2 "" H 6100 4400 50  0001 C CNN
+F 3 "" H 6100 4400 50  0001 C CNN
+	1    6100 4400
+	1    0    0    -1  
+$EndComp
+Text GLabel 5450 3200 0    100  Input ~ 0
+5V
+Wire Wire Line
+	5450 3200 5550 3200
+$Comp
+L Allegro:R R19
+U 1 1 5D5D4EFE
+P 7400 3750
+F 0 "R19" H 7470 3796 50  0000 L CNN
+F 1 "120R" H 7470 3705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7330 3750 50  0001 C CNN
+F 3 "" H 7400 3750 50  0000 C CNN
+	1    7400 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Allegro:R R18
+U 1 1 5D5D55C1
+P 6900 3900
+F 0 "R18" V 6693 3900 50  0000 C CNN
+F 1 "10R" V 6784 3900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6830 3900 50  0001 C CNN
+F 3 "" H 6900 3900 50  0000 C CNN
+	1    6900 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L Allegro:R R17
+U 1 1 5D5D59AF
+P 6900 3600
+F 0 "R17" V 6693 3600 50  0000 C CNN
+F 1 "10R" V 6784 3600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6830 3600 50  0001 C CNN
+F 3 "" H 6900 3600 50  0000 C CNN
+	1    6900 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Allegro:R R15
+U 1 1 5D5D5CD4
+P 6600 3450
+F 0 "R15" H 6530 3404 50  0000 R CNN
+F 1 "560R" H 6550 3300 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6530 3450 50  0001 C CNN
+F 3 "" H 6600 3450 50  0000 C CNN
+	1    6600 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Allegro:R R16
+U 1 1 5D5D601D
+P 6600 4050
+F 0 "R16" H 6670 4096 50  0000 L CNN
+F 1 "560R" H 6670 4005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6530 4050 50  0001 C CNN
+F 3 "" H 6600 4050 50  0000 C CNN
+	1    6600 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 3600 6600 3600
+Connection ~ 6600 3600
+Wire Wire Line
+	6600 3600 6750 3600
+Wire Wire Line
+	6500 3900 6600 3900
+Connection ~ 6600 3900
+Wire Wire Line
+	6600 3900 6750 3900
+Wire Wire Line
+	7050 3600 7400 3600
+Connection ~ 7400 3600
+Wire Wire Line
+	7400 3600 8250 3600
+Wire Wire Line
+	7050 3900 7400 3900
+Connection ~ 7400 3900
+Wire Wire Line
+	7400 3900 8250 3900
+Wire Wire Line
+	6100 4300 6100 4400
+$Comp
+L power:GND #PWR016
+U 1 1 5D5DB61A
+P 6600 3200
+F 0 "#PWR016" H 6600 2950 50  0001 C CNN
+F 1 "GND" H 6605 3027 50  0000 C CNN
+F 2 "" H 6600 3200 50  0001 C CNN
+F 3 "" H 6600 3200 50  0001 C CNN
+	1    6600 3200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6600 3300 6600 3200
+Text GLabel 6600 4350 3    100  Input ~ 0
+5V
+Wire Wire Line
+	6600 4350 6600 4200
+Wire Wire Line
+	4700 3900 5700 3900
+Wire Wire Line
+	5700 3600 4700 3600
+Wire Wire Line
+	5700 3700 5700 3800
+Wire Wire Line
+	5700 3800 5000 3800
+Wire Wire Line
+	5000 3800 5000 3350
+Wire Wire Line
+	5000 3350 4700 3350
+Connection ~ 5700 3800
+Text HLabel 4700 3350 0    100  Input ~ 0
+EN_RS485
+$Comp
+L Allegro:C C16
+U 1 1 5D5DF190
+P 5550 3350
+F 0 "C16" H 5665 3396 50  0000 L CNN
+F 1 "0.1uF" H 5250 3350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5588 3200 50  0001 C CNN
+F 3 "" H 5550 3350 50  0000 C CNN
+	1    5550 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 5D5DF5C6
+P 5500 3500
+F 0 "#PWR014" H 5500 3250 50  0001 C CNN
+F 1 "GND" V 5505 3372 50  0000 R CNN
+F 2 "" H 5500 3500 50  0001 C CNN
+F 3 "" H 5500 3500 50  0001 C CNN
+	1    5500 3500
+	0    1    1    0   
+$EndComp
+Connection ~ 5550 3200
+Wire Wire Line
+	5550 3200 6100 3200
+Wire Wire Line
+	5550 3500 5500 3500
+$EndSCHEMATC

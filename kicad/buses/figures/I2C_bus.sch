@@ -1,0 +1,131 @@
+EESchema Schematic File Version 4
+LIBS:figures-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L EEE4022S:I2C_Master U1
+U 1 1 5D52E94A
+P 4400 3650
+F 0 "U1" V 4715 3917 50  0000 C CNN
+F 1 "I2C_Master" V 4624 3917 50  0000 C CNN
+F 2 "" H 4400 3650 50  0001 C CNN
+F 3 "" H 4400 3650 50  0001 C CNN
+	1    4400 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L EEE4022S:I2C_slave U2
+U 1 1 5D531118
+P 5500 3200
+F 0 "U2" H 5450 3900 50  0000 L CNN
+F 1 "I2C_slave" V 5500 3400 50  0000 L CNN
+F 2 "" H 5500 3350 50  0001 C CNN
+F 3 "" H 5500 3350 50  0001 C CNN
+	1    5500 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEE4022S:I2C_slave U3
+U 1 1 5D53117A
+P 5900 4100
+F 0 "U3" H 5850 4800 50  0000 L CNN
+F 1 "I2C_slave" V 5900 4300 50  0000 L CNN
+F 2 "" H 5900 4250 50  0001 C CNN
+F 3 "" H 5900 4250 50  0001 C CNN
+	1    5900 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L EEE4022S:I2C_slave U4
+U 1 1 5D531444
+P 6300 3200
+F 0 "U4" H 6250 3900 50  0000 L CNN
+F 1 "I2C_slave" V 6300 3400 50  0000 L CNN
+F 2 "" H 6300 3350 50  0001 C CNN
+F 3 "" H 6300 3350 50  0001 C CNN
+	1    6300 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEE4022S:I2C_slave U5
+U 1 1 5D53187B
+P 6700 4100
+F 0 "U5" H 6650 4800 50  0000 L CNN
+F 1 "I2C_slave" V 6700 4300 50  0000 L CNN
+F 2 "" H 6700 4250 50  0001 C CNN
+F 3 "" H 6700 4250 50  0001 C CNN
+	1    6700 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L EEE4022S:I2C_slave U6
+U 1 1 5D531B65
+P 7150 3200
+F 0 "U6" H 7100 3900 50  0000 L CNN
+F 1 "I2C_slave" V 7150 3400 50  0000 L CNN
+F 2 "" H 7150 3350 50  0001 C CNN
+F 3 "" H 7150 3350 50  0001 C CNN
+	1    7150 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 3750 7050 3300
+Wire Wire Line
+	7250 3550 7250 3300
+Wire Wire Line
+	5800 4000 5800 3550
+Connection ~ 5800 3550
+Wire Wire Line
+	6000 4000 6000 3750
+Connection ~ 6000 3750
+Wire Wire Line
+	6000 3750 6200 3750
+Wire Wire Line
+	6600 4000 6600 3550
+Connection ~ 6600 3550
+Wire Wire Line
+	6600 3550 7250 3550
+Wire Wire Line
+	6800 4000 6800 3750
+Connection ~ 6800 3750
+Wire Wire Line
+	6800 3750 7050 3750
+Wire Wire Line
+	5800 3550 6400 3550
+Wire Wire Line
+	6200 3300 6200 3750
+Connection ~ 6200 3750
+Wire Wire Line
+	6200 3750 6800 3750
+Wire Wire Line
+	6400 3300 6400 3550
+Connection ~ 6400 3550
+Wire Wire Line
+	6400 3550 6600 3550
+Wire Wire Line
+	4500 3550 5600 3550
+Wire Wire Line
+	4500 3750 5400 3750
+Wire Wire Line
+	5600 3300 5600 3550
+Connection ~ 5600 3550
+Wire Wire Line
+	5600 3550 5800 3550
+Wire Wire Line
+	5400 3300 5400 3750
+Connection ~ 5400 3750
+Wire Wire Line
+	5400 3750 6000 3750
+$EndSCHEMATC

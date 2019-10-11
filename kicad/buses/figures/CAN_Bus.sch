@@ -1,0 +1,148 @@
+EESchema Schematic File Version 4
+LIBS:figures-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L EEE4022S:CAN_Device U20
+U 1 1 5D54F5FB
+P 5400 3300
+F 0 "U20" H 5350 4200 50  0000 L CNN
+F 1 "CAN_Device" V 5400 3650 50  0000 L CNN
+F 2 "" H 5400 3300 50  0001 C CNN
+F 3 "" H 5400 3300 50  0001 C CNN
+	1    5400 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEE4022S:CAN_Device U21
+U 1 1 5D54FC0F
+P 5850 4100
+F 0 "U21" H 5800 5000 50  0000 L CNN
+F 1 "CAN_Device" V 5850 4450 50  0000 L CNN
+F 2 "" H 5850 4100 50  0001 C CNN
+F 3 "" H 5850 4100 50  0001 C CNN
+	1    5850 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L EEE4022S:CAN_Device U22
+U 1 1 5D54FDDF
+P 6300 3300
+F 0 "U22" H 6250 4200 50  0000 L CNN
+F 1 "CAN_Device" V 6300 3650 50  0000 L CNN
+F 2 "" H 6300 3300 50  0001 C CNN
+F 3 "" H 6300 3300 50  0001 C CNN
+	1    6300 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEE4022S:CAN_Device U23
+U 1 1 5D54FFD3
+P 6750 4100
+F 0 "U23" H 6700 5000 50  0000 L CNN
+F 1 "CAN_Device" V 6750 4450 50  0000 L CNN
+F 2 "" H 6750 4100 50  0001 C CNN
+F 3 "" H 6750 4100 50  0001 C CNN
+	1    6750 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L EEE4022S:CAN_Device U24
+U 1 1 5D5501CB
+P 7200 3300
+F 0 "U24" H 7150 4200 50  0000 L CNN
+F 1 "CAN_Device" V 7200 3650 50  0000 L CNN
+F 2 "" H 7200 3300 50  0001 C CNN
+F 3 "" H 7200 3300 50  0001 C CNN
+	1    7200 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Allegro:R R3
+U 1 1 5D55043B
+P 5000 3700
+F 0 "R3" H 4950 3950 50  0000 L CNN
+F 1 "120R" V 5000 3600 50  0000 L CNN
+F 2 "" V 4930 3700 50  0000 C CNN
+F 3 "" H 5000 3700 50  0000 C CNN
+	1    5000 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Allegro:R R4
+U 1 1 5D550C63
+P 7550 3700
+F 0 "R4" H 7500 3950 50  0000 L CNN
+F 1 "120R" V 7550 3600 50  0000 L CNN
+F 2 "" V 7480 3700 50  0000 C CNN
+F 3 "" H 7550 3700 50  0000 C CNN
+	1    7550 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3850 5350 3850
+Wire Wire Line
+	5350 3400 5350 3850
+Connection ~ 5350 3850
+Wire Wire Line
+	5350 3850 5900 3850
+Wire Wire Line
+	5450 3400 5450 3550
+Wire Wire Line
+	5000 3550 5450 3550
+Connection ~ 5450 3550
+Wire Wire Line
+	5450 3550 5800 3550
+Wire Wire Line
+	6250 3400 6250 3850
+Connection ~ 6250 3850
+Wire Wire Line
+	6250 3850 6800 3850
+Wire Wire Line
+	6350 3400 6350 3550
+Connection ~ 6350 3550
+Wire Wire Line
+	6350 3550 6700 3550
+Wire Wire Line
+	7150 3400 7150 3850
+Connection ~ 7150 3850
+Wire Wire Line
+	7150 3850 7550 3850
+Wire Wire Line
+	7250 3400 7250 3550
+Connection ~ 7250 3550
+Wire Wire Line
+	7250 3550 7550 3550
+Wire Wire Line
+	5800 4000 5800 3550
+Connection ~ 5800 3550
+Wire Wire Line
+	5800 3550 6350 3550
+Wire Wire Line
+	5900 4000 5900 3850
+Connection ~ 5900 3850
+Wire Wire Line
+	5900 3850 6250 3850
+Wire Wire Line
+	6700 4000 6700 3550
+Connection ~ 6700 3550
+Wire Wire Line
+	6700 3550 7250 3550
+Wire Wire Line
+	6800 4000 6800 3850
+Connection ~ 6800 3850
+Wire Wire Line
+	6800 3850 7150 3850
+$EndSCHEMATC

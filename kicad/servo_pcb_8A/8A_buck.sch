@@ -1,0 +1,430 @@
+EESchema Schematic File Version 4
+LIBS:servo_pcb_8A-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 5
+Title "EEE4022S - Servo PCB"
+Date "2019-08-17"
+Rev "0.0"
+Comp "University of Cape Town"
+Comment1 "Project By: Simplicity S Dywili (dywsim001@myuct.ac.za)"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 3800 2150 0    50   Input ~ 0
+GND
+$Comp
+L alpha_and_omega:AOZ2261NQI-11 U3
+U 1 1 5D56981F
+P 6000 3750
+F 0 "U3" H 6025 5265 50  0000 C CNN
+F 1 "AOZ2261NQI-11" H 6025 5174 50  0000 C CNN
+F 2 "my-libraries:AOZ2261NQI-11" H 5800 3550 50  0001 C CNN
+F 3 "" H 5800 3550 50  0001 C CNN
+	1    6000 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Allegro:R R8
+U 1 1 5D56B156
+P 5050 2650
+F 0 "R8" H 5120 2696 50  0000 L CNN
+F 1 "100K" H 5120 2605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4980 2650 50  0001 C CNN
+F 3 "" H 5050 2650 50  0000 C CNN
+	1    5050 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Allegro:C C8
+U 1 1 5D56C8A9
+P 4900 3550
+F 0 "C8" H 5015 3596 50  0000 L CNN
+F 1 "4.7uF" H 5015 3505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4938 3400 50  0001 C CNN
+F 3 "" H 4900 3550 50  0000 C CNN
+	1    4900 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Allegro:R R7
+U 1 1 5D56D704
+P 4350 3550
+F 0 "R7" H 4420 3596 50  0000 L CNN
+F 1 "100K" H 4420 3505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4280 3550 50  0001 C CNN
+F 3 "" H 4350 3550 50  0000 C CNN
+	1    4350 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Allegro:C C9
+U 1 1 5D56DDBF
+P 4900 4850
+F 0 "C9" H 5015 4896 50  0000 L CNN
+F 1 "0.01uF" H 5015 4805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4938 4700 50  0001 C CNN
+F 3 "" H 4900 4850 50  0000 C CNN
+	1    4900 4850
+	1    0    0    -1  
+$EndComp
+Text GLabel 3800 2450 0    50   Input ~ 0
+AGND_8A
+Text GLabel 6000 5250 3    50   Input ~ 0
+GND
+Text GLabel 7850 4700 2    50   Input ~ 0
+AGND_8A
+$Comp
+L Allegro:R R11
+U 1 1 5D571277
+P 7750 4500
+F 0 "R11" H 7820 4546 50  0000 L CNN
+F 1 "33K" H 7820 4455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7680 4500 50  0001 C CNN
+F 3 "" H 7750 4500 50  0000 C CNN
+	1    7750 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Allegro:R R10
+U 1 1 5D57174F
+P 7750 3950
+F 0 "R10" H 7820 3996 50  0000 L CNN
+F 1 "210K_220K_270K_340K" H 7820 3905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7680 3950 50  0001 C CNN
+F 3 "" H 7750 3950 50  0000 C CNN
+	1    7750 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 5D571C60
+P 7400 3600
+F 0 "L1" V 7200 3600 50  0000 C CNN
+F 1 "1uH" V 7300 3650 50  0000 C CNN
+F 2 "Inductor_SMD:L_Bourns_SRP1245A" H 7400 3600 50  0001 C CNN
+F 3 "~" H 7400 3600 50  0001 C CNN
+	1    7400 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Allegro:C C12
+U 1 1 5D576282
+P 8350 4200
+F 0 "C12" H 8465 4246 50  0000 L CNN
+F 1 "88uF" H 8465 4155 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 8388 4050 50  0001 C CNN
+F 3 "" H 8350 4200 50  0000 C CNN
+	1    8350 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Allegro:C C10
+U 1 1 5D577305
+P 7050 3400
+F 0 "C10" V 6798 3400 50  0000 C CNN
+F 1 "0.1uF" V 6889 3400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7088 3250 50  0001 C CNN
+F 3 "" H 7050 3400 50  0000 C CNN
+	1    7050 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Allegro:R R9
+U 1 1 5D57BB9C
+P 7400 3200
+F 0 "R9" H 7470 3246 50  0000 L CNN
+F 1 "9K1" H 7470 3155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7330 3200 50  0001 C CNN
+F 3 "" H 7400 3200 50  0000 C CNN
+	1    7400 3200
+	1    0    0    -1  
+$EndComp
+Text GLabel 7700 3350 2    50   Input ~ 0
+AGND_8A
+Text GLabel 4900 4450 0    50   Input ~ 0
+AGND_8A
+Text GLabel 4900 5100 0    50   Input ~ 0
+AGND_8A
+Text GLabel 4850 3750 0    50   Input ~ 0
+AGND_8A
+$Comp
+L Allegro:C C11
+U 1 1 5D57EAE9
+P 8350 2800
+F 0 "C11" H 8465 2846 50  0000 L CNN
+F 1 "22uF" H 8465 2755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 8388 2650 50  0001 C CNN
+F 3 "" H 8350 2800 50  0000 C CNN
+	1    8350 2800
+	1    0    0    -1  
+$EndComp
+Text GLabel 8350 5250 3    50   Input ~ 0
+GND
+Text GLabel 8350 3000 3    50   Input ~ 0
+GND
+Text Notes 9550 3050 0    100  ~ 0
+TON approx 190 nS
+$Comp
+L Allegro:R R6
+U 1 1 5D580B08
+P 3950 2300
+F 0 "R6" H 4020 2346 50  0000 L CNN
+F 1 "0R" H 4020 2255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3880 2300 50  0001 C CNN
+F 3 "" H 3950 2300 50  0000 C CNN
+	1    3950 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 2150 3950 2150
+Wire Wire Line
+	3800 2450 3950 2450
+Wire Wire Line
+	5250 2950 5050 2950
+Wire Wire Line
+	5050 2950 5050 2800
+Wire Wire Line
+	5050 2500 5050 2150
+Wire Wire Line
+	5050 2150 7000 2150
+Wire Wire Line
+	7000 2150 7000 2550
+Wire Wire Line
+	7000 2550 6800 2550
+Wire Wire Line
+	5250 3400 4900 3400
+Wire Wire Line
+	4900 3400 4350 3400
+Connection ~ 4900 3400
+Wire Wire Line
+	4900 3700 4900 3750
+Wire Wire Line
+	4900 3750 4850 3750
+Wire Wire Line
+	5250 3850 4350 3850
+Wire Wire Line
+	4350 3850 4350 3700
+Text GLabel 4150 3400 0    100  Input ~ 0
+5V
+Wire Wire Line
+	4350 3400 4200 3400
+Connection ~ 4350 3400
+Wire Wire Line
+	5250 4450 4900 4450
+Wire Wire Line
+	5250 4700 4900 4700
+Wire Wire Line
+	4900 5000 4900 5100
+Wire Wire Line
+	5800 5050 5800 5150
+Wire Wire Line
+	5800 5150 5950 5150
+Wire Wire Line
+	6250 5150 6250 5050
+Wire Wire Line
+	6100 5050 6100 5150
+Connection ~ 6100 5150
+Wire Wire Line
+	6100 5150 6250 5150
+Wire Wire Line
+	5950 5050 5950 5150
+Connection ~ 5950 5150
+Wire Wire Line
+	5950 5150 6000 5150
+Connection ~ 6000 5150
+Wire Wire Line
+	6000 5150 6100 5150
+Wire Wire Line
+	7750 4100 7750 4300
+Wire Wire Line
+	6800 4300 7750 4300
+Connection ~ 7750 4300
+Wire Wire Line
+	7750 4300 7750 4350
+Wire Wire Line
+	6800 4700 7750 4700
+Wire Wire Line
+	7750 4700 7750 4650
+Wire Wire Line
+	7750 4700 7850 4700
+Connection ~ 7750 4700
+Wire Wire Line
+	8350 5250 8350 4350
+Wire Wire Line
+	6800 3600 7200 3600
+Wire Wire Line
+	7550 3600 7750 3600
+Wire Wire Line
+	8350 3600 8350 4050
+Wire Wire Line
+	6800 3400 6900 3400
+Wire Wire Line
+	7200 3400 7200 3600
+Connection ~ 7200 3600
+Wire Wire Line
+	7200 3600 7250 3600
+Wire Wire Line
+	7750 3800 7750 3600
+Connection ~ 7750 3600
+Wire Wire Line
+	7750 3600 8350 3600
+Wire Wire Line
+	6800 3050 7400 3050
+Wire Wire Line
+	7400 3350 7700 3350
+Wire Wire Line
+	6800 2650 7000 2650
+Wire Wire Line
+	7000 2650 7000 2750
+Wire Wire Line
+	7000 2950 6800 2950
+Wire Wire Line
+	6800 2750 7000 2750
+Connection ~ 7000 2750
+Wire Wire Line
+	7000 2750 7000 2850
+Wire Wire Line
+	6800 2850 7000 2850
+Connection ~ 7000 2850
+Wire Wire Line
+	7000 2850 7000 2950
+Wire Wire Line
+	7000 2650 8350 2650
+Connection ~ 7000 2650
+Wire Wire Line
+	8350 2950 8350 3000
+Text GLabel 9250 2650 2    50   Input ~ 0
+V_in
+Text GLabel 8600 3600 2    50   Input ~ 0
+V_Servo
+Wire Wire Line
+	8600 3600 8500 3600
+Connection ~ 8350 3600
+Connection ~ 8350 2650
+Text HLabel 8600 3750 2    100  Output ~ 0
+V_Servo
+Wire Wire Line
+	8600 3750 8500 3750
+Wire Wire Line
+	8500 3750 8500 3600
+Connection ~ 8500 3600
+Wire Wire Line
+	8500 3600 8350 3600
+Text HLabel 4150 4150 0    100  Input ~ 0
+EN_8A
+Text HLabel 4150 3600 0    100  Input ~ 0
+5V
+Wire Wire Line
+	4150 3600 4200 3600
+Wire Wire Line
+	4200 3600 4200 3400
+Connection ~ 4200 3400
+Wire Wire Line
+	4200 3400 4150 3400
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5D5B08FD
+P 3700 3850
+F 0 "TP1" V 3895 3922 50  0000 C CNN
+F 1 "testpoint" V 3804 3922 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 3900 3850 50  0001 C CNN
+F 3 "~" H 3900 3850 50  0001 C CNN
+	1    3700 3850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3700 3850 4350 3850
+Connection ~ 4350 3850
+Wire Wire Line
+	4150 4150 5250 4150
+Wire Wire Line
+	6800 4100 6800 4000
+Connection ~ 6800 3600
+Connection ~ 6800 3700
+Wire Wire Line
+	6800 3700 6800 3600
+Connection ~ 6800 3800
+Wire Wire Line
+	6800 3800 6800 3700
+Connection ~ 6800 3900
+Wire Wire Line
+	6800 3900 6800 3800
+Connection ~ 6800 4000
+Wire Wire Line
+	6800 4000 6800 3900
+Wire Wire Line
+	7000 2650 7000 2550
+Connection ~ 7000 2550
+Wire Wire Line
+	6000 5150 6000 5250
+$Comp
+L Device:LED D3
+U 1 1 5D5B1D84
+P 9650 4150
+F 0 "D3" V 9689 4033 50  0000 R CNN
+F 1 "LED" V 9598 4033 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 9650 4150 50  0001 C CNN
+F 3 "~" H 9650 4150 50  0001 C CNN
+	1    9650 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Allegro:R R22
+U 1 1 5D5B2360
+P 9650 4550
+F 0 "R22" H 9720 4596 50  0000 L CNN
+F 1 "560R" H 9720 4505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9580 4550 50  0001 C CNN
+F 3 "" H 9650 4550 50  0000 C CNN
+	1    9650 4550
+	1    0    0    -1  
+$EndComp
+Text GLabel 9650 4850 3    50   Input ~ 0
+GND
+Text GLabel 9650 3850 1    50   Input ~ 0
+V_Servo
+Wire Wire Line
+	9650 3850 9650 4000
+Wire Wire Line
+	9650 4300 9650 4400
+Wire Wire Line
+	9650 4700 9650 4850
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 5D5C4CBC
+P 9000 2300
+F 0 "J4" V 8964 2112 50  0000 R CNN
+F 1 "Conn_01x02" V 8873 2112 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9000 2300 50  0001 C CNN
+F 3 "~" H 9000 2300 50  0001 C CNN
+	1    9000 2300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9000 2650 9000 2500
+Wire Wire Line
+	9100 2500 9100 2650
+Wire Wire Line
+	9100 2650 9250 2650
+$Comp
+L Connector_Generic:Conn_01x02 J6
+U 1 1 5D5CDED9
+P 10650 4250
+F 0 "J6" H 10730 4242 50  0000 L CNN
+F 1 "Conn_01x02" H 10730 4151 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 10650 4250 50  0001 C CNN
+F 3 "~" H 10650 4250 50  0001 C CNN
+	1    10650 4250
+	1    0    0    -1  
+$EndComp
+Text GLabel 10450 4250 0    50   Input ~ 0
+V_Servo
+Text GLabel 10450 4350 0    50   Input ~ 0
+GND
+Wire Wire Line
+	8350 2650 9000 2650
+$EndSCHEMATC
